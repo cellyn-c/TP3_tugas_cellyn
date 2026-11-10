@@ -1,14 +1,23 @@
 
 import React from 'react';
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { View, Text, StyleSheet, Pressable, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.layar}>
       <View style={styles.kartu}>
         <View style={styles.avatar}>
-          <Text style={styles.inisial}>AK</Text>
-        </View>
+  <Image
+    source={{
+      uri: 'https://s3.amazonaws.com/assets.unprimdn.ac.id/images/students/73130/73130-medium.jpg'
+    }}
+    style={{
+      width: 100,
+      height: 100,
+      borderRadius: 50
+    }}
+  />
+</View>
 
         <Text style={styles.nama}>CELLYN</Text>
         <Text style={styles.identitas}>NIM:253303620011</Text>
